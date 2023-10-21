@@ -1,4 +1,6 @@
 <section class="article-content">
-    {{ partial "article/components/toc-inline" . }}
+    {{ if gt ((findRE `(?i)<h\d` .Content) | len) 0 }}
+        {{ partial "article/components/toc-inline" . }}
+    {{ end }}
     {{ .Content }}
 </section>
