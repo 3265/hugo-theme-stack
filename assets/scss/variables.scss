@@ -137,6 +137,9 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
     --table-border-color: #dadada;
     --tr-even-background-color: #efefee;
 
+    --inline-toc-color: #539b5f;
+    --inline-toc-background-color: #e7e71b;
+
     &[data-scheme="dark"] {
         --code-background-color: #272822;
         --code-text-color: rgba(255, 255, 255, 0.9);
@@ -145,7 +148,9 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
         --tr-even-background-color: #545454;
 
         --blockquote-background-color: rgb(75 75 75);
+        --inline-toc-background-color: #373e47;
     }
+
 }
 
 /*

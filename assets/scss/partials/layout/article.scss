@@ -441,6 +441,7 @@
         opacity: 0;
         transition: opacity 0.3s ease;
     }
+
     .toc--inline {
         background-color: var(--blockquote-background-color);
         margin-left: calc((var(--card-padding)) * -1);
@@ -450,10 +451,20 @@
 
         padding-top: var(--card-padding);
         padding-bottom: var(--card-padding);
-
-        @include respond(xl) {
-          display: none;
+        font-size: 1.4rem;
+        a {
+            color:  var(--inline-toc-color);
         }
-      }
+        background: var(--inline-toc-background-color)
+    }
 
+}
+
+#TableOfContents {
+    li {
+        padding: 0px !important;
+    }
+    ol {
+        padding-inline-start: 20px;
+    }
 }
