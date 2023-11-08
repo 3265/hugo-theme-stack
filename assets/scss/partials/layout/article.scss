@@ -452,8 +452,37 @@
             color:  var(--inline-toc-color);
         }
         background: var(--inline-toc-background-color)
+
+
     }
 
+    ol {
+        list-style-type: none;
+        counter-reset: item;
+
+        li a:first-of-type::before {
+            counter-increment: item;
+            content: counters(item, ".") ". ";
+            font-weight: bold;
+            margin-right: 5px;
+        }
+    }
+
+
+    /* article-header index from JS */
+    .article-header-index {
+        border-bottom: 1px solid;
+        margin-right: 10px;
+    }
+
+    /* for header less table */
+    thead th:empty {
+        display: none;
+    }
+
+    thead > tr {
+        border-top: 1px solid;
+    }
 }
 
 #TableOfContents {
