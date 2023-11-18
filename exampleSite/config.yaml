@@ -1,6 +1,6 @@
 baseurl: https://example.com
 languageCode: en-us
-theme: hugo-theme-stack-toc
+theme: hugo-theme-stack-plus
 paginate: 5
 title: Example Site
 copyright: Example Person
@@ -30,7 +30,7 @@ languages:
 disqusShortname: hugo-theme-stack
 
 # GA Tracking ID
-googleAnalytics:
+googleAnalytics: G-xxxxx
 
 # Theme i18n support
 # Available values: ar, bn, ca, de, el, en, es, fr, hu, id, it, ja, ko, nl, pt-br, th, uk, zh-cn, zh-hk, zh-tw
