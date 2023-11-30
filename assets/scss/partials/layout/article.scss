@@ -457,7 +457,7 @@
     }
 
     ol {
-        list-style-type: none;
+        list-style-type: decimal;
         counter-reset: item;
 
         li a:first-of-type::before {
