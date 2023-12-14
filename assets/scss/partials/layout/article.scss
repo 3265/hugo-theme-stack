@@ -452,8 +452,11 @@
             color:  var(--inline-toc-color);
         }
         background: var(--inline-toc-background-color)
+    }
 
-
+    .toc--inline ol {
+        list-style-type: none;
+        padding-inline-start: 10px !important;
     }
 
     ol {
